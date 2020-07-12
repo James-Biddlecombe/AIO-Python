@@ -1,4 +1,7 @@
 import math
+import random
+import datetime as dt
+from dateutil.tz import gettz
 
 
 #This is a python comment
@@ -99,28 +102,32 @@ print(len(s1))
 print(len(s2))
 print(len(s3))
 
+#working with common string operators
+s = "Abracadabra Hocus Pocus you're a turtle dove"
+print("s = ", s)
+print("is there a lowercase letter t in s?", "t" in s)
+print("is there an uppercase letter t in s?", "T" in s)
+print("print 15 hyphens in a row: ", "-" * 15)
+print("print first character in s: ", s[0])
+print("print characters 33-39 in s: ", s[33:39])
+print("print every 3rd character in s starting at 0: ", s[0:len(s):3])
+print("print the lowest char in s(space lower than a): ", min(s))
+print("print the highest char in s: ", max(s))
+print("where is the first P: ", s.index("P"))
+print("where is the first lowercase o in second half of s: ", s.index("o",22,44))
+print("how many lowercase a in s: ", s.count("a"))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#manipulating strings with methods
+s1 = "There is no such word as schmeedledorp"
+s2 = "   a b c   "
+s3 = "ABC"
+print("capitalise the first letter, rest lower: ", s3.capitalize())
+print("count the number of spaces in s1: ", s1.count(" "))
+print("find the dot in s3: ", s3.find("."))
+print("is s2 all lowercase: ", s2.islower())
+print("convert s3 to all lower: ", s3.lower())
+print("strip leading characters from s2: ", s2.lstrip())
+print("strip leading and trailing from s2: ", s2.strip())
+print("swap the case of letters in s1: ", s1.swapcase())
+print("show s1 in title case: ", s1.title())
+print("show s1 uppercase: ", s1.upper())
